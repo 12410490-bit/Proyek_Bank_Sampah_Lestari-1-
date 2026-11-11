@@ -1,0 +1,63 @@
+/* ==========================================================================
+   STYLES.CSS - BANK SAMPAH AIRMADIDI (TAHAP 5 IMPLEMENTASI & DEPLOY)
+   ========================================================================== */
+
+/* 1. Mockup Layar Smartphone Nasabah */
+.mobile-screen {
+    width: 360px;
+    height: 700px;
+    border-radius: 36px;
+    border: 12px solid #1f2937;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+/* 2. Format Area Diagram Mermaid Arsitektur */
+.mermaid {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.mermaid svg {
+    width: 100% !important;
+    max-width: 900px !important;
+    height: auto !important;
+    min-height: 480px !important;
+    font-family: ui-sans-serif, system-ui, sans-serif !important;
+}
+
+/* 3. Animasi Smooth Transisi Pindah Tab & Halaman UI */
+.ui-page, .tab-content {
+    animation: fadeIn 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 4. Kustomisasi Scrollbar (Dark Theme) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #10b981;
+}
